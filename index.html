@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>github-cli-clone</title>
+  <link href="/src/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-[#0E1117]">
+
+  <header>
+
+    <div>
+
+      <nav class="flex p-4 px-12 justify-between items-center">
+
+        <div class="nav_left flex items-center gap-3">
+          <img class="h-8" src="src/assets/svgs/GitHub_Invertocat_White.svg" alt="">
+          <a href="#" class="text-[#E6EDF3] font-[mona] hover:underline">CLI</a>
+        </div>
+
+        <div class="nav_right text-[#E6EDF3] flex items-center gap-5 font-[mona]">
+          <a href="#" class="hover:underline text-sm">Manual</a>
+          <a href="#" class="hover:underline text-sm">Release notes</a>
+        </div>
+
+      </nav>
+
+      <div class="container p-12 px-80 flex flex-col gap-4">
+
+        <h1 class="text-7xl font-[mona] font-black text-[#E6EDF3]">Take GitHub to the command line</h1>
+
+        <p class="text-[#6E7681] font-[mona] text-[2vw]">GitHub CLI brings GitHub to your terminal. Free and open
+          source.</p>
+
+        <div class="flex flex-col gap-3">
+          <button
+            class="text-[mona] text-[#0D1117] bg-[#F7F9F9] px-6 py-3 text-xl w-fit font-semibold rounded-md cursor-pointer hover:shadow-lg hover:shadow-[#E6EDF3]/40 transition duration-300">Install
+            for Linux</button>
+
+          <a href="#" class="text-sm text-[#E6EDF3] font-[mona]">View installation instructions &rarr;</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- SECTION 1 -->
+    <div class="bg-[url('/src/assets/svgs/glow.svg')] px-32 py-10 flex flex-col items-center gap-8">
+
+      <div class="flex flex-col items-center gap-2">
+        <p class="text-[#E6EDF3] font-mono text-2xl"><span class="text-[#2F81F7]"> $</span> gh release create</p>
+        <p class="text-[mona] text-[#E6EDF3]">Create a new release.</p>
+      </div>
+
+      <div class="mainContainer h-[75vh] w-full bg-black py-12 px-8 rounded relative">
+
+        <div class="flex justify-between items-center absolute top-0 left-0 w-full px-4 py-2">
+          <div class="flex items-center gap-2">
+            <div class="bg-white h-3 w-3 rounded-full opacity-[0.1]"></div>
+            <div class="bg-white h-3 w-3 rounded-full opacity-[0.1]"></div>
+            <div class="bg-white h-3 w-3 rounded-full opacity-[0.1]"></div>
+          </div>
+          <img class="h-6 w-6" src="src/assets/svgs/play.svg" alt="">
+
+        </div>
+
+        <div class="text-[#E6EDF3] font-mono font-medium">
+          <p>$ gh release create 1.0</p>
+          <p> <span class="text-[#2EA043]">?</span> Title <span class="text-[#388BFD]">GitHub CLI 1.0</span></p>
+          <p> <span class="text-[#2EA043]">?</span> Release notes <span class="text-[#388BFD]">Write my own</span></p>
+          <p> <span class="text-[#2EA043]">?</span> Is this a prerelease? <span class="text-[#388BFD]">No</span></p>
+          <p> <span class="text-[#2EA043]">?</span> Submit? <span class="text-[#388BFD]">Publish release</span></p>
+          <p>https://github.com/octocat/.github/releases/tag/1.0</p>
+        </div>
+
+
+      </div>
+
+      <p class="text-[mona] font-black text-[#E6EDF3] text-[2vw]">View all GitHub CLI commands &rarr;</p>
+
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="bg-white px-4 py-16 w-full flex flex-col gap-10">
+
+      <h1 class="text-[5vw] font-[mona] text-[##1F2328] font-black">Goodbye, context switching. <br> Hello, terminal.
+      </h1>
+
+      <div id="boxContainer" class="w-full flex justify-evenly gap-1">
+        <!-- Dynamic Boxes -->
+      </div>
+
+      <div class="py-28 flex justify-center items-center">
+
+        <div class="p-10 w-fit flex flex-col items-start gap-6 shadow-lg rounded">
+
+          <div class="flex flex-col gap-0.5">
+            <h2 class="text-[2.5vw] font-[mona] font-extrabold">Try GitHub on the command line</h2>
+            <p>GitHub CLI brings GitHub to your terminal. Free and open source.</p>
+          </div>
+
+          <button
+            class="bg-[#2B2F32] px-4 py-2.5 text-[#E6EDF3] font-[mona] font-semibold rounded cursor-pointer hover:shadow-lg hover:shadow-black/40 hover:bg-[#31373a] transition duration-300">Download for
+            Windows</button>
+          <a href="#" class="font-[mona] text-sm text-[#0969DA]">View installation instructions &rarr;</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+
+    <div class="bg-white p-4 flex flex-col gap-24">
+      <div class="flex">
+        <a href="#" class="font-[mona] font-black text-[2vw] w-[35%]">GitHub</a>
+
+        <div id="linksContainer" class="flex-1 flex items-start justify-center gap-2">
+
+          <!-- DYNAMIC LINKS -->
+
+        </div>
+      </div>
+
+      <div class="py-2 px-4 flex justify-between items-center">
+
+        <ul class="flex items-center gap-4 text-[#656D76] text-xs">
+          <li>&copy; 2026 GitHub, Inc</li>
+          <li><a href="#" class="hover:underline">Terms</a></li>
+          <li><a href="#" class="hover:underline">Privacy</a></li>
+        </ul>
+
+        <div class="flex gap-4">
+          <img src="src/assets/svgs/twitter.svg" alt="">
+          <img src="src/assets/svgs/fb.svg" alt="">
+          <img src="src/assets/svgs/yt.svg" alt="">
+          <img src="src/assets/svgs/in.svg" alt="">
+          <img src="src/assets/svgs/github-footer.svg" alt="">
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

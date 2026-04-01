@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'mona';
+    src: url('/src/assets/fonts/mona.ttf') format('woff2');
+}
